@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inloggningssida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Formuläret för inloggningssidan -->
+      <div id="loginForm">
+        <h2>Logga in här!</h2>
+        <input type="text" id="username" placeholder="Namn" />
+        <input type="password" id="password" placeholder="Lösenord" />
+        <!-- Om fel lösenord, felmeddelande -->
+        <div id="errorMessage">
+          <h2>
+            Fel lösenord eller användarnamn! <br />
+            Försök igen.
+          </h2>
+        </div>
+        <button onclick="login()">Logga in!</button>
+      </div>
+    </div>
+
+    <!-- Om rätt lösenord, välkomstmeddelande -->
+    <div id="welcomeMessage">
+      <h2>Välkommen!</h2>
+      <button id="logoutBtn" onclick="logout()">Logga ut!</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
