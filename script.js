@@ -5,9 +5,9 @@ const correctPassword = "1234";
 // Testar om användaren redan är inloggad med localStorage funktion
 document.addEventListener("DOMContentLoaded", function () {
   if (localStorage.getItem("isLoggedIn") === "true") {
-    showWelcomeMessage(); // Om användaren redan är inloggad
+    showWelcomeMessage(); 
   } else {
-    showLoginForm(); // Om användaren inte är inloggad
+    showLoginForm(); 
   }
 });
 
@@ -47,8 +47,8 @@ function showLoginForm() {
 }
 
 // Funktione för när användaren loggar ut
+// Rensa localStorage
 function logout() {
-  // "Rensar" localStorage samt fälten i formuläret
   localStorage.removeItem("isLoggedIn");
   showLoginForm();
   document.getElementById("username").value = "";
