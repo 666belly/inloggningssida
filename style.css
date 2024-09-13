@@ -1,4 +1,4 @@
-/* Sätter stil för allt på sidan */
+/* Stilsättning för sidan */
 * {
   font-family: Arial, sans-serif;
   color: #435882;
@@ -8,6 +8,7 @@ body {
   display: flex;
 }
 
+/* Ordnar formuläret och följande välkomstmeddelande/felmeddelande */
 #loginForm,
 #welcomeMessage,
 #errorMessage {
@@ -24,12 +25,14 @@ body {
   text-align: center;
 }
 
+/* Styr utseendett på formuläret */
 input {
   width: 300px;
   padding: 10px;
   margin: 10px 0;
 }
 
+/* Styr utseendet på logga in knappen */
 button {
   padding: 10px;
   width: 325px;
@@ -39,6 +42,7 @@ button {
   border-radius: 10px;
 }
 
+/* När användaren hovrar musen över knappen */
 button:hover {
   background-color: #435882;
 }
